@@ -3,9 +3,7 @@ const Button = ({className, text, target}) => {
         e.preventDefault();
         const targetElement = document.getElementById(target);
         if (targetElement) {
-            const offset = window.innerHeight * 0.15;
-            const top = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
+            window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' });
         }
     }
     return ( 
