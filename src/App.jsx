@@ -1,8 +1,10 @@
+import Hero from './sections/Hero';
+
 const App = () => {
   return ( 
-    <main>
-      <div>test</div>
-    </main>
+    <>
+      <Hero />
+    </>
    );
 }
  
