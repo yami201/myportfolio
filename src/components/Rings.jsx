@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
+import { sphereColors } from "../constants";
 
 
-const colors = ["#7aa3ff", "#ff6ec7", "#7fff7a", "#ffd37a", "#ff7a7a"];
 
 export default function Rings() {
   const ringCount = 10;
@@ -38,8 +38,8 @@ export default function Rings() {
       {Array.from({ length: ringCount }).map((_, i) => {
         const radius = ((i + 1) / ringCount) * maxRadius;
         const angle = 2 * Math.PI * Math.random();
-        
-        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        const color = sphereColors[Math.floor(Math.random() * sphereColors.length)];
 
         return (
           <group key={i} ref={(el) => (ringsRef.current[i] = el)}>

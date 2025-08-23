@@ -3,10 +3,11 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { Suspense, useRef } from "react";
 import gsap from "gsap";
 import Blob from "./components/Blob.jsx";
-import UiLabel from "./components/UiLabel.jsx";
 import Rings from "./components/Rings.jsx";
 import Particles from "./components/Particles.jsx";
-
+import { Html } from "@react-three/drei";
+import Button from "./components/Button.jsx";
+import CustomCursor from "./components/CustomCursor.jsx";
 export default function App() {
   const blobRef = useRef();
   const ringsRef = useRef();
@@ -23,11 +24,13 @@ export default function App() {
   };
 
   return (
-    <Canvas
-      camera={{ position: [0, 4, 8], fov: 20 }}
-      dpr={[1, 2]}
-    >
-      
+    <>
+      <CustomCursor />
+      <Canvas
+        camera={{ position: [0, 4, 8], fov: 20 }}
+        dpr={[1, 2]}
+      >
+
       <color attach="background" args={["#000000"]} />
 
       <ambientLight intensity={0.6} /> 
@@ -44,7 +47,11 @@ export default function App() {
             onPointerOut={() => handleHover(false)}
           >
             <Blob ref={blobRef} />
-            <UiLabel position={[0, 1.75, 0]}>Click Me ↓</UiLabel>
+            <Html className="w-54" position={[0, 0.7, 0]} style={{ transform: 'translateX(-50%)' }}>
+              <Button 
+                text='Click Me' 
+                />
+            </Html>
           </group>
           <Rings ref={ringsRef} />
 
@@ -68,5 +75,6 @@ export default function App() {
           />
       </EffectComposer>
     </Canvas>
+  </>
   );
 }
