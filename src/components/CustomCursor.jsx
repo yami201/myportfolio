@@ -1,49 +1,72 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function CustomCursor() {
-  const dotRef = useRef();
+const CustomCursor = () => {
   const circleRef = useRef();
+  const dotRef = useRef();
 
   useEffect(() => {
-    let mouseX = 0, mouseY = 0;
+    const circleEl = circleRef.current
+    const dotEl = dotRef.current
+
+    let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 }
+    let prevMouse = { x: mouse.x, y: mouse.y }
 
     const handleMove = (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
+      mouse.x = e.clientX
+      mouse.y = e.clientY
 
-      // dot snaps to mouse instantly
-      gsap.set(dotRef.current, {
-        x: mouseX,
-        y: mouseY,
-      });
+      // dot follows instantly
+      gsap.set(dotEl, { x: mouse.x, y: mouse.y })
+    }
 
-      // elastic follow for circle
-      gsap.to(circleRef.current, {
-        x: mouseX,
-        y: mouseY,
-        duration: 0.5,
+    window.addEventListener("mousemove", handleMove)
+
+    const tick = () => {
+      const dx = mouse.x - prevMouse.x
+      const dy = mouse.y - prevMouse.y
+      prevMouse.x = mouse.x
+      prevMouse.y = mouse.y
+
+      const velocity = Math.min(Math.sqrt(dx * dx + dy * dy) * 4, 150)
+      const scaleValue = (velocity / 150) * 0.5
+      const angle = Math.atan2(dy, dx) * (180 / Math.PI)
+
+      gsap.to(circleEl, {
+        x: mouse.x,
+        y: mouse.y,
+        scaleX: 1 + scaleValue,
+        scaleY: 1 - scaleValue,
+        rotation: angle,
+        duration: 0.4,
         ease: "expo.out"
-      });
+      })
+    }
 
+    gsap.ticker.add(tick)
+
+    return () => {
+      window.removeEventListener("mousemove", handleMove)
+      gsap.ticker.remove(tick)
     };
-
-    window.addEventListener("mousemove", handleMove);
-    return () => window.removeEventListener("mousemove", handleMove);
   }, []);
 
   return (
     <>
+      {/* Main small dot */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-2 h-2 rounded-full pointer-events-none z-50 bg-white"
+        className="fixed top-0 left-0 w-2 h-2 rounded-full bg-white pointer-events-none z-[10001]"
         style={{ transform: "translate(-50%, -50%)" }}
       />
+      {/* Elastic squishy circle */}
       <div
         ref={circleRef}
-        className="fixed border-white top-0 left-0 w-10 h-10 rounded-full border pointer-events-none z-40"
+        className="fixed top-0 left-0 w-10 h-10 rounded-full border-2 border-white pointer-events-none z-[10000]"
         style={{ transform: "translate(-50%, -50%)" }}
       />
     </>
   );
-}
+};
+
+export default CustomCursor;
