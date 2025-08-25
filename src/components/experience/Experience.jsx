@@ -8,7 +8,6 @@ import Rings from "./Rings.jsx";
 import gsap from "gsap";
 import UiLabel from "./UiLabel.jsx";
 import Floor from "./Floor.jsx";
-import SkillTiles from "./SkillsTiles.jsx";
 
 export default function Experience() {
     const dirLightRef = useRef();
@@ -56,8 +55,6 @@ export default function Experience() {
                     ringsVisible && <Rings />
                 }
                 <Floor />
-
-                <SkillTiles />
             </group>
 
             <EffectComposer disableNormalPass>
