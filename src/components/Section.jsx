@@ -1,21 +1,14 @@
-// SectionsWrapper.jsx
-import { useInView } from "react-intersection-observer"
-import useStore from "../hooks/use-store"
+import { useRef, useEffect } from "react"
+import { useScroll, useMotionValueEvent } from "framer-motion"
+import useStore from "../hooks/useStore"
 
-const Section = ({ id, children }) => {
-  const setCurrentSection = useStore((state) => state.setCurrentSection)
-  const { ref } = useInView({
-    threshold: 0.5,
-    onChange: (inView) => {
-      if (inView) setCurrentSection(id)
-    }
-  })
+const Section = ({ id, children }) => (
+  <section
+    id={id}
+    className="relative max-w-full h-screen border border-white">
+    {children}
+  </section>
+)
 
-  return (
-    <section ref={ref} id={id} className="min-h-screen w-full">
-      {children}
-    </section>
-  )
-}
 
 export default Section

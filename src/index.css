@@ -11,6 +11,10 @@ html, body, #root {
   cursor: none;
 }
 
+canvas {
+  @apply pointer-events-auto;
+}
+
 * { box-sizing: border-box; }
 
 html,

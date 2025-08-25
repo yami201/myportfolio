@@ -2,7 +2,7 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { sphereColors } from "../../constants"
-import useStore from "../../hooks/use-store"
+import useStore from "../../hooks/useStore"
 
 gsap.registerPlugin(useGSAP)
 

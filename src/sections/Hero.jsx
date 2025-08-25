@@ -5,7 +5,7 @@ import LinkedIn from "../assests/LinkedIn.jsx"
 
 const Hero = () => {
     return (
-        <div className="relative p-10 sm:p-20 flex flex-col max-md:pt-30 md:justify-center max-md:items-center">
+        <div className="relative p-10 sm:p-20 h-full flex flex-col max-md:pt-30 md:justify-center max-md:items-center">
             <p className="text-slate-400 font-bold text-xl mb-2 ml-1">Hi, I am</p>
             <h1 className="font-bold mb-4">
                 <span className="text-6xl md:text-8xl">Mohammed</span><br />
@@ -27,7 +27,7 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="max-md:w-full w-72">
+            <div className=" w-72">
                 <Button text="View My Work" target="projects" />
                 <div className="flex justify-between mt-4">
                     <div className="border border-slate-500 bg-black rounded font-bold p-2 px-4">Hire Me</div>

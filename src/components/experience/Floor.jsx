@@ -1,4 +1,4 @@
-import useStore from "../../hooks/use-store"
+import useStore from "../../hooks/useStore"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"

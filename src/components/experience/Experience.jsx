@@ -2,13 +2,13 @@ import { Canvas } from "@react-three/fiber";
 import { useRef } from "react";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { Stats } from "@react-three/drei";
-import useStore from "../../hooks/use-store.js";
+import useStore from "../../hooks/useStore.js";
 import Blob from "./Blob.jsx";
 import Rings from "./Rings.jsx";
-import Particles from "./Particles.jsx";
 import gsap from "gsap";
 import UiLabel from "./UiLabel.jsx";
 import Floor from "./Floor.jsx";
+import SkillTiles from "./SkillsTiles.jsx";
 
 export default function Experience() {
     const dirLightRef = useRef();
@@ -34,8 +34,8 @@ export default function Experience() {
             dpr={[1, 2]}
             className='fixed top-0 left-0 w-full h-full'
         >
-            <Stats showPanel={0} />
             <color attach="background" args={["#000000"]} />
+            <Stats showPanel={0} />
             <ambientLight intensity={0.6} />
             <directionalLight 
                 position={[0, 2, 4]} 
@@ -56,7 +56,8 @@ export default function Experience() {
                     ringsVisible && <Rings />
                 }
                 <Floor />
-                <Particles />
+
+                <SkillTiles />
             </group>
 
             <EffectComposer disableNormalPass>
