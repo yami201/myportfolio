@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px}</style>
+    </defs>
+    <path class="cls-1"
+        d="M44 28v-8h-5.56A14.89 14.89 0 0 0 37 16.61l4-3.92L35.31 7l-3.92 4A14.89 14.89 0 0 0 28 9.56V4h-8v5.56A14.89 14.89 0 0 0 16.61 11l-3.92-4L7 12.69l4 3.92A14.89 14.89 0 0 0 9.56 20H4v8h5.56A14.89 14.89 0 0 0 11 31.39l-4 3.92L12.69 41l3.92-4A14.89 14.89 0 0 0 20 38.44V44h8v-5.56A14.89 14.89 0 0 0 31.39 37l3.92 4L41 35.31l-4-3.92A14.89 14.89 0 0 0 38.44 28z" />
+    <circle class="cls-1" cx="24" cy="24" r="10" />
+    <path class="cls-1" d="M-418-146h680v680h-680z" />
+</svg>

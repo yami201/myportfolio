@@ -23,7 +23,7 @@ export default function App() {
         className="relative w-full h-screen overflow-y-scroll overflow-x-hidden"
       >
         <Section id="hero">
-          <div className={`absolute w-full h-full ${UiShown && 'z-[-10]'}`}>
+          <div className={`absolute w-full h-screen ${UiShown && 'z-[-10]'}`}>
             <Experience />
           </div>
 
