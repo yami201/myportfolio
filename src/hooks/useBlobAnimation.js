@@ -30,7 +30,7 @@ export default function useBlobAnimation(
 
   const springEyesBlink = useSpring(eyesBlink, { stiffness: 200, damping: 40 });
 
-  // Exposed coords (plain numbers for R3F props)
+  // Exposed coords
   const [coords, setCoords] = useState({ x: 0, y: 2, s: 1 });
   const [eyes, setEyes] = useState({
     left: { x: -0.05, y: 0.15 },
@@ -51,7 +51,7 @@ export default function useBlobAnimation(
     return () => controls.stop();
   }, []);
 
-  // Sync springs → state
+  // Sync springs with state
   useEffect(() => {
     const subs = [
       springX.on("change", (v) => setCoords((p) => ({ ...p, x: v }))),

@@ -16,11 +16,12 @@ export default function App() {
   return (
     <>
       <CustomCursor />
-      <div className="absolute w-screen h-screen inset-0">
+      <Suspense fallback={<Loader />}>
+      <div className="fixed w-screen h-screen inset-0">
         <Particles />
       </div>
       <main
-        className="relative w-full h-screen overflow-y-scroll overflow-x-hidden"
+        className={`relative w-full h-screen ${!UiShown && 'max-h-screen overflow-hidden'}`}
       >
         <Section id="hero">
           <div className={`absolute w-full h-screen ${UiShown && 'z-[-10]'}`}>
@@ -40,6 +41,8 @@ export default function App() {
           </>
         )}
       </main>
+
+      </Suspense>
     </>
   )
 }

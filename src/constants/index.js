@@ -1,33 +1,35 @@
+import { title } from "framer-motion/client";
+
 const sphereColors = ["#7ff", "#ff6ec7", "#7fff7a", "#ffd37a", "#ff7a7a"];
 
 const BlobHeroLocationDefault = {
-    position: { x: 1, y: 0 },
-    scale: 3,
-    eyes: {
-      left: {
-        x: -0.15,
-        y: 0.15,
-      },
-      right: {
-        x: -0.05,
-        y: 0.15,
-      },
+  position: { x: 1, y: 0 },
+  scale: 3,
+  eyes: {
+    left: {
+      x: -0.15,
+      y: 0.15,
     },
+    right: {
+      x: -0.05,
+      y: 0.15,
+    },
+  },
 };
 
 const BlobHeroLocationMobile = {
-    position: { x: 0, y: -1 },
-    scale: 2,
-    eyes: {
-      left: {
-        x: -0.05,
-        y: 0.2,
-      },
-      right: {
-        x: 0.05,
-        y: 0.2,
-      },
+  position: { x: 0, y: -1 },
+  scale: 2,
+  eyes: {
+    left: {
+      x: -0.05,
+      y: 0.2,
     },
+    right: {
+      x: 0.05,
+      y: 0.2,
+    },
+  },
 };
 
 const skills = {
@@ -83,8 +85,55 @@ const skills = {
     { name: "OCI", icon: "/icons/oracle.svg" },
     { name: "Bash", icon: "/icons/bash.svg" },
     { name: "Jest", icon: "/icons/jest.svg" },
-  ]
-}
+  ],
+};
+
+const projects = [
+  {
+    title: "b-drive",
+    stack: ["Next.Js", "Tailwind", "Prisma", "Vercel", "GithubActions", "Truffle", "Solidity"],
+    description:
+      "A decentralized file storage web app built on blockchain technology, enabling secure, distributed, and censorship-resistant file management.",
+    image: "/images/bdrive.png",
+  },
+  {
+    title: "ctf infrastructure",
+    stack: ["Terraform","Linux", "AWS"],
+    description:
+      "Designed and deployed the infrastructure for a Capture the Flag (CTF) cybersecurity competition, hosting 15 teams on AWS with fully automated provisioning using Terraform.",
+    link: "https://github.com/yami201/ctf-infra",
+    image: "/images/ctf.png",
+  },
+  {
+    title: "TeamBoard",
+    stack: ["React", "ContextAPI", "NodeJS", "Spring", "Tailwind", "PeerJS", "Socket.io"],
+    description:
+      "A real-time team collaboration platform featuring meetings, an interactive whiteboard, messaging, and file sharing to boost remote teamwork efficiency.",
+    image: "/images/teamboard.png",
+  },
+  {
+    title: "3D MiniGame",
+    stack: ["React", "ReactThreeFiber","ThreeJS","Zustand"],
+    description:
+      "A browser-based 3D minigame where players control a ball to reach the finish line, with randomized stages for a unique challenge every run.",
+    image: "/images/3dminigame.png",
+    link: "https://github.com/yami201/creatingagame",
+  },
+  {
+    title: "Organic Sphere",
+    stack: ["React", "ReactThreeFiber", "ThreeJS","Tailwind","GLSL"],
+    description:
+      "An interactive 3D art experiment featuring a stylized organic sphere that reacts with smooth animations and custom GLSL shading on click.",
+    image: "/images/organic.png",
+    link: "https://github.com/yami201/organic-sphere",
+  }
+];
 
 
-export { sphereColors, BlobHeroLocationDefault, BlobHeroLocationMobile, skills };
+export {
+  sphereColors,
+  BlobHeroLocationDefault,
+  BlobHeroLocationMobile,
+  skills,
+  projects
+};
