@@ -97,7 +97,7 @@ const projects = [
     image: "/images/bdrive.png",
   },
   {
-    title: "ctf infrastructure",
+    title: "ctf infra",
     stack: ["Terraform","Linux", "AWS"],
     description:
       "Designed and deployed the infrastructure for a Capture the Flag (CTF) cybersecurity competition, hosting 15 teams on AWS with fully automated provisioning using Terraform.",

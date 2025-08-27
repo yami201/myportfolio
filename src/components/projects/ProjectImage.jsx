@@ -30,12 +30,12 @@ const ProjectImage = ({ src, alt, hoverActive }) => {
     return (
         <>
             {/* Mobile view */}
-            <div className="relative w-full h-[400px] overflow-hidden md:hidden rounded-lg">
+            <div className="relative w-full aspect-video overflow-hidden md:hidden rounded-lg mb-4">
                 <img
                     ref={imgRef}
                     src={src}
                     alt={alt}
-                    className="absolute top-0 left-0 w-full h-[110%]"
+                    className="absolute top-0 left-0 w-full h-[130%]"
                 />
             </div>
 

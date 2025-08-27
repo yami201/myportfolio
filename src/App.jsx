@@ -8,6 +8,7 @@ import Projects from "./sections/Projects.jsx"
 import Section from "./components/Section.jsx"
 import Skills from "./sections/Skills.jsx"
 import Particles from "./components/Particles.jsx"
+import About from "./sections/About.jsx"
 
 
 export default function App() {
@@ -32,6 +33,9 @@ export default function App() {
         </Section>
         {UiShown && (
           <>
+            <Section id="about">
+              <About />
+            </Section>
             <Section id="skills">
               <Skills />
             </Section>

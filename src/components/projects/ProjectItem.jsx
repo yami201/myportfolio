@@ -30,7 +30,7 @@ const ProjectItem = ({ index, project }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             onClick={handleClick}
-            className="relative w-full md:border-b border-slate-600 py-4 ">
+            className="relative w-full md:border-b border-slate-600 py-4 max-md:mb-6 ">
             {
 
                 project.image && (
