@@ -4,7 +4,7 @@ import { projects } from "../constants";
 
 const Projects = () => {
     return (
-        <div className="min-h-screen w-full px-8 py-16 text-white">
+        <div className="min-h-screen w-full py-16 text-white">
             <SectionHeader content="my projects" />
 
             

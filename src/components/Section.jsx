@@ -1,7 +1,8 @@
-const Section = ({ id, children }) => (
+const Section = ({ id, children, className }) => (
   <section
     id={id}
-    className="relative max-w-full border border-white">
+    className={`relative max-w-full border border-white scroll-smooth ${className}`}
+  >
     {children}
   </section>
 )

@@ -5,7 +5,7 @@ import LinkedIn from "../assests/LinkedIn.jsx"
 
 const Hero = () => {
     return (
-        <div className="relative h-screen p-10 sm:p-20 flex flex-col max-md:pt-30 md:justify-center max-md:items-center">
+        <div className="relative h-screen py-10 md:py-20 flex flex-col max-md:pt-30 md:px-24  md:justify-center max-md:items-center">
             <p className="text-slate-400 font-bold text-xl mb-2 ml-1">Hi, I am</p>
             <h1 className="font-bold mb-4">
                 <span className="text-6xl md:text-8xl">Mohammed</span><br />

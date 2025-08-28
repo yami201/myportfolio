@@ -1,6 +1,6 @@
 import { title } from "framer-motion/client";
 
-const sphereColors = ["#7ff", "#ff6ec7", "#7fff7a", "#ffd37a", "#ff7a7a"];
+const sphereColors = [ "#1AC0FE", "#C54838", "#F8B135", "#127347"];
 
 const BlobHeroLocationDefault = {
   position: { x: 1, y: 0 },
@@ -129,11 +129,80 @@ const projects = [
   }
 ];
 
+const career = [
+  {
+    date: "September 2022",
+    title: "Computer Science Engineering Student & Reserve Officer",
+    company: "Mohammadia School of Engineers, Morocco",
+    description:
+      "Began studies in Computer Science Engineering while also serving as a reserve military officer.",
+    color: "#2e4a9d",
+  },
+  {
+    date: "2023",
+    title: "Freelance Web Developer",
+    company: "SALAAM Association",
+    description:
+      "Refactored and modernized the organization's website, upgrading to the latest technologies and resolving UI issues.",
+    color: "#5C1730",
+  },
+  {
+    date: "Summer 2023",
+    title: "Frontend Developer Intern",
+    company: "coAlias (Remote)",
+    description:
+      "Developed a responsive and interactive analytics page to visualize website performance metrics.",
+    color: "#1AC0FE",
+  },
+  {
+    date: "Feb – June 2024",
+    title: "Apprenticeship: Software Engineer",
+    company: "Attijariwafa Bank",
+    description:
+      "Contributed to the development of a recruitment platform enabling employers to post job openings and candidates to apply directly.",
+    color: "#F8B135",
+  },
+  {
+    date: "Summer 2024",
+    title: "Software Engineering Intern",
+    company: "Xlab",
+    description:
+      "Enhanced and expanded features in the company's no-code platform for building functional applications.",
+    color: "#F16B71",
+  },
+  {
+    date: "Jan – Aug 2024",
+    title: "End of Studies Internship: Research Assistant",
+    company: "Oracle R&D Morocco",
+    description:
+      "Designed and implemented a Runbook Tasks Automation Tool to automate operational tasks and reduce human intervention.",
+    color: "#C54838",
+  },
+  {
+    date: "May 29, 2024",
+    title: "Graduation: Computer Science Engineer",
+    company: "Mohammadia School of Engineers",
+    description:
+      "Successfully defended final project and obtained the title of State Engineer in Morocco.",
+    color: "#2e4a9d",
+  },
+  {
+    date: "July 31, 2024",
+    title: "Reserve Military Officer Commission",
+    company: "Royal Moroccan Armed Forces",
+    description:
+      "Took the military oath of officers and was officially commissioned as a reserve military officer in a ceremony presided over by His Majesty King Mohammed VI.",
+    color: "#127347", 
+  },
+];
+
+
 
 export {
   sphereColors,
   BlobHeroLocationDefault,
   BlobHeroLocationMobile,
   skills,
-  projects
+  projects,
+  career
 };

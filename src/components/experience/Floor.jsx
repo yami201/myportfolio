@@ -31,7 +31,7 @@ const Floor = () => {
       rotation={[-Math.PI / 2, 0, 0]}
       position={[0, 0, 0]}
     >
-      <planeGeometry args={[2, 2]} />
+      <planeGeometry args={[5, 5]} />
       <meshBasicMaterial color="#000000" transparent opacity={1} />
     </mesh>
   )

@@ -22,7 +22,7 @@ body {
   width: 100dvw;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
-
+  overflow-x: hidden;
   @apply text-white;
 }
 

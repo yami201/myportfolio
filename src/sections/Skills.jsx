@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader.jsx";
 
 export default function Skills() {
   return (
-    <div className="min-h-screen w-full px-8 py-16 text-white">
+    <div className="min-h-screen w-full py-16 text-white">
       <SectionHeader content="my stack" />
 
       <SkillCategory title="Frontend" items={skills.frontend} />
