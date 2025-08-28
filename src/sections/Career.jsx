@@ -103,7 +103,6 @@ const Career = () => {
               />
 
 
-              {/* Content */}
               <h3 className="text-2xl font-semibold">{exp.title}</h3>
               <p className="text-gray-400 text-sm mb-2">
                 {exp.company} — {exp.date}

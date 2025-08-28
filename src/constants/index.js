@@ -51,6 +51,7 @@ const skills = {
     { name: "Node.js", icon: "/icons/nodejs.svg" },
     { name: "Express.js", icon: "/icons/expressjs.svg" },
     { name: "NestJS", icon: "/icons/nestjs.svg" },
+    { name: "GraphQL", icon: "/icons/graphql.svg" },
     { name: "Java", icon: "/icons/java.svg" },
     { name: "Spring", icon: "/icons/spring.svg" },
     { name: "Python", icon: "/icons/python.svg" },

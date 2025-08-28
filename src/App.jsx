@@ -10,6 +10,7 @@ import Skills from "./sections/Skills.jsx"
 import Particles from "./components/Particles.jsx"
 import About from "./sections/About.jsx"
 import Career from "./sections/Career.jsx"
+import Contact from "./sections/Contact.jsx"
 
 
 export default function App() {
@@ -45,6 +46,9 @@ export default function App() {
               </Section>
               <Section id="projects" className="px-8">
                 <Projects />
+              </Section>
+              <Section id="contact" className="px-8">
+                <Contact />
               </Section>
             </>
           )}
