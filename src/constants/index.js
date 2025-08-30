@@ -95,7 +95,7 @@ const projects = [
     stack: ["Next.Js", "Tailwind", "Prisma", "Vercel", "GithubActions", "Truffle", "Solidity"],
     description:
       "A decentralized file storage web app built on blockchain technology, enabling secure, distributed, and censorship-resistant file management.",
-    image: "/images/bdrive.png",
+    image: "/images/bdrive.webp",
   },
   {
     title: "ctf infra",
@@ -103,21 +103,21 @@ const projects = [
     description:
       "Designed and deployed the infrastructure for a Capture the Flag (CTF) cybersecurity competition, hosting 15 teams on AWS with fully automated provisioning using Terraform.",
     link: "https://github.com/yami201/ctf-infra",
-    image: "/images/ctf.png",
+    image: "/images/ctf.webp",
   },
   {
     title: "TeamBoard",
     stack: ["React", "ContextAPI", "NodeJS", "Spring", "Tailwind", "PeerJS", "Socket.io"],
     description:
       "A real-time team collaboration platform featuring meetings, an interactive whiteboard, messaging, and file sharing to boost remote teamwork efficiency.",
-    image: "/images/teamboard.png",
+    image: "/images/teamboard.webp",
   },
   {
     title: "3D MiniGame",
     stack: ["React", "ReactThreeFiber","ThreeJS","Zustand"],
     description:
       "A browser-based 3D minigame where players control a ball to reach the finish line, with randomized stages for a unique challenge every run.",
-    image: "/images/3dminigame.png",
+    image: "/images/3dminigame.webp",
     link: "https://github.com/yami201/creatingagame",
   },
   {
@@ -125,7 +125,7 @@ const projects = [
     stack: ["React", "ReactThreeFiber", "ThreeJS","Tailwind","GLSL"],
     description:
       "An interactive 3D art experiment featuring a stylized organic sphere that reacts with smooth animations and custom GLSL shading on click.",
-    image: "/images/organic.png",
+    image: "/images/organic.webp",
     link: "https://github.com/yami201/organic-sphere",
   }
 ];
@@ -199,61 +199,11 @@ const career = [
 
 
 const assets = [
-  "../icons/javascript.svg",
-  "../icons/typescript.svg",
-  "../icons/react.svg",
-  "../icons/nextjs.svg",
-  "../icons/redux.svg",
-  "../icons/zustand.svg",
-  "../icons/tailwind.svg",
-  "../icons/bootstrap.svg",
-  "../icons/sass.svg",
-  "../icons/framermotion.svg",
-  "../icons/gsap.svg",
-  "../icons/threejs.svg",
-
-  "../icons/nodejs.svg",
-  "../icons/expressjs.svg",
-  "../icons/nestjs.svg",
-  "../icons/graphql.svg",
-  "../icons/java.svg",
-  "../icons/spring.svg",
-  "../icons/python.svg",
-  "../icons/flask.svg",
-  "../icons/go.svg",
-
-  "../icons/solidity.svg",
-  "../icons/ethers.svg",
-  "../icons/web3js.svg",
-
-  "../icons/postgres.svg",
-  "../icons/mysql.svg",
-  "../icons/oracle.svg",
-  "../icons/mongodb.svg",
-  "../icons/redis.svg",
-  "../icons/prisma.svg",
-  "../icons/firebase.svg",
-  "../icons/supabase.svg",
-
-  "../icons/git.svg",
-  "../icons/docker.svg",
-  "../icons/kubernetes.svg",
-  "../icons/terraform.svg",
-  "../icons/ansible.svg",
-  "../icons/github-actions.svg",
-  "../icons/gitlab.svg",
-  "../icons/jenkins.svg",
-  "../icons/aws.svg",
-  "../icons/oracle.svg",
-  "../icons/bash.svg",
-  "../icons/jest.svg",
-
-
-  "/images/bdrive.png",
-  "/images/ctf.png",
-  "/images/teamboard.png",
-  "/images/3dminigame.png",
-  "/images/organic.png",
+  "/images/bdrive.webp",
+  "/images/ctf.webp",
+  "/images/teamboard.webp",
+  "/images/3dminigame.webp",
+  "/images/organic.webp",
 ]
 
 
