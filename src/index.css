@@ -17,6 +17,10 @@ canvas {
 
 * { box-sizing: border-box; }
 
+html {
+  background-color: black;
+}
+
 html,
 body {
   width: 100dvw;

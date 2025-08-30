@@ -1,4 +1,4 @@
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import ProjectItem from "../components/projects/ProjectItem";
 import { projects } from "../constants";
 

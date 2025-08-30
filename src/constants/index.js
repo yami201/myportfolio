@@ -1,5 +1,4 @@
-import { title } from "framer-motion/client";
-
+import ICONS from "../assests/icons"
 const sphereColors = [ "#1AC0FE", "#C54838", "#F8B135", "#127347"];
 
 const BlobHeroLocationDefault = {
@@ -34,60 +33,61 @@ const BlobHeroLocationMobile = {
 
 const skills = {
   frontend: [
-    { name: "JavaScript", icon: "/icons/javascript.svg" },
-    { name: "TypeScript", icon: "/icons/typescript.svg" },
-    { name: "React", icon: "/icons/react.svg" },
-    { name: "Next.js", icon: "/icons/nextjs.svg" },
-    { name: "Redux", icon: "/icons/redux.svg" },
-    { name: "Zustand", icon: "/icons/zustand.svg" },
-    { name: "Tailwind", icon: "/icons/tailwind.svg" },
-    { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
-    { name: "Sass", icon: "/icons/sass.svg" },
-    { name: "Framer Motion", icon: "/icons/framermotion.svg" },
-    { name: "GSAP", icon: "/icons/gsap.svg" },
-    { name: "Three.js", icon: "/icons/threejs.svg" },
+    { name: "JavaScript", Icon: ICONS.JavascriptIcon },
+    { name: "TypeScript", Icon: ICONS.TypescriptIcon },
+    { name: "React", Icon: ICONS.ReactIcon },
+    { name: "Next.js", Icon: ICONS.NextjsIcon },
+    { name: "Redux", Icon: ICONS.ReduxIcon },
+    { name: "Zustand", Icon: ICONS.ZustandIcon },
+    { name: "Tailwind", Icon: ICONS.TailwindIcon },
+    { name: "Bootstrap", Icon: ICONS.BootstrapIcon },
+    { name: "Sass", Icon: ICONS.SassIcon },
+    { name: "Framer Motion", Icon: ICONS.FramerIcon },
+    { name: "GSAP", Icon: ICONS.GsapIcon },
+    { name: "Three.js", Icon: ICONS.ThreeIcon },
   ],
   backend: [
-    { name: "Node.js", icon: "/icons/nodejs.svg" },
-    { name: "Express.js", icon: "/icons/expressjs.svg" },
-    { name: "NestJS", icon: "/icons/nestjs.svg" },
-    { name: "GraphQL", icon: "/icons/graphql.svg" },
-    { name: "Java", icon: "/icons/java.svg" },
-    { name: "Spring", icon: "/icons/spring.svg" },
-    { name: "Python", icon: "/icons/python.svg" },
-    { name: "Flask", icon: "/icons/flask.svg" },
-    { name: "Go", icon: "/icons/go.svg" },
+    { name: "Node.js", Icon: ICONS.NodeIcon },
+    { name: "Express.js", Icon: ICONS.ExpressIcon },
+    { name: "NestJS", Icon: ICONS.NestIcon },
+    { name: "GraphQL", Icon: ICONS.GraphqlIcon },
+    { name: "Java", Icon: ICONS.JavaIcon },
+    { name: "Spring", Icon: ICONS.SpringIcon },
+    { name: "Python", Icon: ICONS.PythonIcon },
+    { name: "Flask", Icon: ICONS.FlaskIcon },
+    { name: "Go", Icon: ICONS.GoIcon },
   ],
   blockchain: [
-    { name: "Solidity", icon: "/icons/solidity.svg" },
-    { name: "Ethers.js", icon: "/icons/ethers.svg" },
-    { name: "Web3.js", icon: "/icons/web3js.svg" },
+    { name: "Solidity", Icon: ICONS.SolidityIcon },
+    { name: "Ethers.js", Icon: ICONS.EthersIcon },
+    { name: "Web3.js", Icon: ICONS.Web3Icon },
   ],
   databases: [
-    { name: "PostgreSQL", icon: "/icons/postgres.svg" },
-    { name: "MySQL", icon: "/icons/mysql.svg" },
-    { name: "OracleDB", icon: "/icons/oracle.svg" },
-    { name: "MongoDB", icon: "/icons/mongodb.svg" },
-    { name: "Redis", icon: "/icons/redis.svg" },
-    { name: "Prisma", icon: "/icons/prisma.svg" },
-    { name: "Firebase", icon: "/icons/firebase.svg" },
-    { name: "Supabase", icon: "/icons/supabase.svg" },
+    { name: "PostgreSQL", Icon: ICONS.PostgresIcon },
+    { name: "MySQL", Icon: ICONS.MysqlIcon },
+    { name: "OracleDB", Icon: ICONS.OracleIcon },
+    { name: "MongoDB", Icon: ICONS.MongoIcon },
+    { name: "Redis", Icon: ICONS.RedisIcon },
+    { name: "Prisma", Icon: ICONS.PrismaIcon },
+    { name: "Firebase", Icon: ICONS.FirebaseIcon },
+    { name: "Supabase", Icon: ICONS.SupabaseIcon },
   ],
   devops: [
-    { name: "Git", icon: "/icons/git.svg" },
-    { name: "Docker", icon: "/icons/docker.svg" },
-    { name: "Kubernetes", icon: "/icons/kubernetes.svg" },
-    { name: "Terraform", icon: "/icons/terraform.svg" },
-    { name: "Ansible", icon: "/icons/ansible.svg" },
-    { name: "GitHub Actions", icon: "/icons/github-actions.svg" },
-    { name: "GitLab CI/CD", icon: "/icons/gitlab.svg" },
-    { name: "Jenkins", icon: "/icons/jenkins.svg" },
-    { name: "AWS", icon: "/icons/aws.svg" },
-    { name: "OCI", icon: "/icons/oracle.svg" },
-    { name: "Bash", icon: "/icons/bash.svg" },
-    { name: "Jest", icon: "/icons/jest.svg" },
+    { name: "Git", Icon: ICONS.GitIcon },
+    { name: "Docker", Icon: ICONS.DockerIcon },
+    { name: "Kubernetes", Icon: ICONS.KubernetesIcon },
+    { name: "Terraform", Icon: ICONS.TerraformIcon },
+    { name: "Ansible", Icon: ICONS.AnsibleIcon },
+    { name: "GitHub Actions", Icon: ICONS.GithubActionsIcon },
+    { name: "GitLab CI/CD", Icon: ICONS.GitlabIcon },
+    { name: "Jenkins", Icon: ICONS.JenkinsIcon },
+    { name: "AWS", Icon: ICONS.AwsIcon },
+    { name: "OCI", Icon: ICONS.OciIcon },
+    { name: "Bash", Icon: ICONS.BashIcon },
+    { name: "Jest", Icon: ICONS.JestIcon },
   ],
-};
+}
+
 
 const projects = [
   {
@@ -198,6 +198,66 @@ const career = [
 ];
 
 
+const assets = [
+  "../icons/javascript.svg",
+  "../icons/typescript.svg",
+  "../icons/react.svg",
+  "../icons/nextjs.svg",
+  "../icons/redux.svg",
+  "../icons/zustand.svg",
+  "../icons/tailwind.svg",
+  "../icons/bootstrap.svg",
+  "../icons/sass.svg",
+  "../icons/framermotion.svg",
+  "../icons/gsap.svg",
+  "../icons/threejs.svg",
+
+  "../icons/nodejs.svg",
+  "../icons/expressjs.svg",
+  "../icons/nestjs.svg",
+  "../icons/graphql.svg",
+  "../icons/java.svg",
+  "../icons/spring.svg",
+  "../icons/python.svg",
+  "../icons/flask.svg",
+  "../icons/go.svg",
+
+  "../icons/solidity.svg",
+  "../icons/ethers.svg",
+  "../icons/web3js.svg",
+
+  "../icons/postgres.svg",
+  "../icons/mysql.svg",
+  "../icons/oracle.svg",
+  "../icons/mongodb.svg",
+  "../icons/redis.svg",
+  "../icons/prisma.svg",
+  "../icons/firebase.svg",
+  "../icons/supabase.svg",
+
+  "../icons/git.svg",
+  "../icons/docker.svg",
+  "../icons/kubernetes.svg",
+  "../icons/terraform.svg",
+  "../icons/ansible.svg",
+  "../icons/github-actions.svg",
+  "../icons/gitlab.svg",
+  "../icons/jenkins.svg",
+  "../icons/aws.svg",
+  "../icons/oracle.svg",
+  "../icons/bash.svg",
+  "../icons/jest.svg",
+
+
+  "/images/bdrive.png",
+  "/images/ctf.png",
+  "/images/teamboard.png",
+  "/images/3dminigame.png",
+  "/images/organic.png",
+]
+
+
+
 
 export {
   sphereColors,
@@ -205,5 +265,6 @@ export {
   BlobHeroLocationMobile,
   skills,
   projects,
-  career
+  career,
+  assets
 };

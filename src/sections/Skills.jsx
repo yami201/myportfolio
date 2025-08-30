@@ -1,7 +1,7 @@
 import { skills } from "../constants/index.js";
 import SkillCategory from "../components/skills/SkillCategory.jsx";
 import { motion } from "framer-motion";
-import SectionHeader from "../SectionHeader.jsx";
+import SectionHeader from "../components/SectionHeader.jsx";
 
 export default function Skills() {
   return (

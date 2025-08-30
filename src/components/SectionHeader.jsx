@@ -1,22 +1,21 @@
 import { motion } from "framer-motion";
+import ICONS from "../assests/icons";
 
 const SectionHeader = ({ content }) => {
     return (
         <h2
             className="text-xl font-bold tracking-widest mb-12 flex items-center gap-4">
-            <span>
-                <motion.img
-                    src="/icons/gear.svg"
-                    alt="Gear"
+            <motion.span
+                animate={{ rotate: 360 }}
+                transition={{
+                    repeat: Infinity,
+                    ease: "linear",
+                    duration: 3,
+                }}>
+                <ICONS.GearIcon
                     className="size-12"
-                    animate={{ rotate: 360 }}
-                    transition={{
-                        repeat: Infinity,
-                        ease: "linear",
-                        duration: 3,
-                    }}
                 />
-            </span>
+            </motion.span>
             <span className="uppercase">{content}</span>
         </h2>
     );

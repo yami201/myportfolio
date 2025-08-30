@@ -1,7 +1,7 @@
 const Section = ({ id, children, className }) => (
   <section
     id={id}
-    className={`relative max-w-full border border-white scroll-smooth ${className}`}
+    className={`relative max-w-full scroll-smooth ${className}`}
   >
     {children}
   </section>

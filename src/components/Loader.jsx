@@ -1,13 +1,11 @@
-import { Html, useProgress } from "@react-three/drei";
-
-const Loader = () => {
-  const { progress } = useProgress();
+const Loader = ({progress}) => {
+  console.log("Loading progress:", progress);
   return (
-    <Html center>
-      <div className="text-white font-bold text-lg animate-pulse">
-        Loading {progress.toFixed(0)}%
+    <>
+      <div className="text-black w-screen h-screen bg-white font-bold text-lg">
+        Loading... {progress}%
       </div>
-    </Html>
+    </>
   );
 }
 export default Loader;

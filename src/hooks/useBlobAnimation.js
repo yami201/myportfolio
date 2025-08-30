@@ -81,7 +81,6 @@ export default function useBlobAnimation(
 
   // Change Blob Position when it is Hero
   useEffect(() => {
-    console.log("Current Section:", currentSection);
     const target = isMobile ? BlobHeroLocationMobile : BlobHeroLocationDefault;
     if (currentSection === "hero") {
       posX.set(target.position.x);
