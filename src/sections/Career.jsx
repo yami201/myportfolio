@@ -3,18 +3,26 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SectionHeader from "../components/SectionHeader";
 import { career } from "../constants";
+import { useMediaQuery } from "react-responsive";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const gradient = `linear-gradient(to bottom, ${career
+const gradient = `linear-gradient(to bottom, ${[...career, {color:'white'}]
   .map((exp) => exp.color)
   .join(", ")})`;
 
 const Career = () => {
   const sectionRef = useRef(null);
   const lineMaskRef = useRef(null);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useEffect(() => {
+    if (isMobile) {
+      gsap.set(".career-card", { autoAlpha: 1, x: 0 });
+      gsap.set(lineMaskRef.current, { yPercent: 100 });
+      return
+    }
+
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -89,11 +97,9 @@ const Career = () => {
           />
         </div>
 
-        {/* Career items */}
         <div className="flex-1 space-y-20">
           {career.map((exp, index) => (
             <div key={index} className="career-card relative opacity-0">
-              {/* Dot */}
               <span
                 style={{
                   border: `2px solid ${exp.color}`,
