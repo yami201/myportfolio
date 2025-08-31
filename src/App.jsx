@@ -12,7 +12,7 @@ const Skills = lazy(() => import("./sections/Skills.jsx"))
 const About = lazy(() => import("./sections/About.jsx"))
 const Career = lazy(() => import("./sections/Career.jsx"))
 const Contact = lazy(() => import("./sections/Contact.jsx"))
-const Experience = lazy(() => import("./components/experience/experience.jsx"))
+const Experience = lazy(() => import("./components/experience/Experience.jsx"))
 
 
 
@@ -23,7 +23,7 @@ const components = [
   import("./sections/About.jsx"),
   import("./sections/Career.jsx"),
   import("./sections/Contact.jsx"),
-  import("./components/experience/experience.jsx"),
+  import("./components/experience/Experience.jsx"),
 ]
 
 /* --- App --- */
