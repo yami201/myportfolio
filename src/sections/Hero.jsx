@@ -5,6 +5,15 @@ import LinkedIn from "../assests/LinkedIn.jsx"
 import { motion } from "framer-motion"
 
 const Hero = () => {
+    const scrollToContactForm = () => {
+        const contactForm = document.getElementById("contact");
+        if (contactForm) {
+            contactForm.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }
     return (
         <div className="relative h-screen py-10 md:py-20 flex flex-col max-md:pt-30 md:px-24  md:justify-center max-md:items-center">
             <motion.p
@@ -51,15 +60,17 @@ const Hero = () => {
                 className="w-72">
                 <Button text="View My Work" target="projects" />
                 <div className="flex justify-between mt-4">
-                    <div className="border border-slate-500 bg-black rounded font-bold p-2 px-4">Hire Me</div>
+                    <button 
+                        onClick={scrollToContactForm}
+                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer">Hire Me</button>
                     <a
-                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4"
+                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer"
                         target="_blank"
                         href="https://github.com/yami201">
                         <Github />
                     </a>
                     <a
-                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4"
+                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer"
                         target="_blank"
                         href="https://www.linkedin.com/in/mohammed-nejjar">
                         <LinkedIn />

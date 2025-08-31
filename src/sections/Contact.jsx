@@ -32,7 +32,6 @@ const Contact = () => {
             });
 
         } catch (error) {
-            console.error("Error sending email:", error);
 
         } finally {
             setLoading(false);

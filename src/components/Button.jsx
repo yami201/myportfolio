@@ -1,17 +1,21 @@
-const Button = ({className,style, text, target, onClick}) => {
+const Button = ({ className, style, text, target, onClick }) => {
     const handleClick = (e) => {
         e.preventDefault();
         if (onClick) {
             onClick(e);
             return;
         }
+
         const targetElement = document.getElementById(target);
         if (targetElement) {
-            window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' });
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
         }
     }
-    return ( 
-        <a 
+    return (
+        <a
             className={`cta-wrapper ${className ?? ''}`}
             style={style}
             onClick={handleClick}
@@ -25,7 +29,7 @@ const Button = ({className,style, text, target, onClick}) => {
             </div>
 
         </a>
-     );
+    );
 }
 
 export default Button;
