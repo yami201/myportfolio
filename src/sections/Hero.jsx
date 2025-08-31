@@ -5,10 +5,10 @@ import LinkedIn from "../assests/LinkedIn.jsx"
 import { motion } from "framer-motion"
 
 const Hero = () => {
-    const scrollToContactForm = () => {
-        const contactForm = document.getElementById("contact");
-        if (contactForm) {
-            contactForm.scrollIntoView({
+    const scrollToTarget = (target) => {
+        const targetElement = document.getElementById(target);
+        if (targetElement) {
+            targetElement.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
             });
@@ -58,10 +58,10 @@ const Hero = () => {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                 viewport={{ once: true }}
                 className="w-72">
-                <Button text="View My Work" target="projects" />
+                <Button text="About Me" onClick={scrollToTarget.bind(this, "about")} />
                 <div className="flex justify-between mt-4">
-                    <button 
-                        onClick={scrollToContactForm}
+                    <button
+                        onClick={scrollToTarget.bind(this, "projects")}
                         className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer">Hire Me</button>
                     <a
                         className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer"

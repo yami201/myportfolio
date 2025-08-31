@@ -40,8 +40,7 @@ export default function App() {
           <Particles />
         </div>
         <main
-          className={`relative w-full h-screen ${!UiShown && "max-h-screen overflow-hidden"
-            }`}
+          className={`relative w-full ${!UiShown ? "h-screen overflow-hidden" : "min-h-screen overflow-y-auto"}`}
         >
           <Section id="hero">
             <div className={`absolute w-full h-screen ${UiShown && "z-[-10]"}`}>

@@ -5,7 +5,9 @@
   color-scheme: dark;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   background-color: transparent;
   cursor: none;
@@ -15,7 +17,9 @@ canvas {
   @apply pointer-events-auto;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   background-color: black;
@@ -50,7 +54,7 @@ section {
 }
 
 .cta-wrapper {
-  @apply relative z-20 cursor-pointer;
+  @apply relative cursor-pointer w-full;
 }
 
 .cta-button {
@@ -58,21 +62,29 @@ section {
 
   .bg-circle {
     @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
-      w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-      rounded-full bg-primary transition-all duration-500;
+      w-[120%] h-[120%] rounded-full bg-primary transition-all duration-500;
+
+    @apply md:group-hover:size-10 md:group-hover:right-10;
   }
 
   .text {
     @apply uppercase md:text-lg text-black transition-all duration-500
-      group-hover:text-primary group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+      -translate-x-5 xl:translate-x-0;
+
+    @apply md:group-hover:text-primary md:group-hover:-translate-x-5;
   }
 
   .arrow-wrapper {
-    @apply group-hover:bg-primary size-10 rounded-full absolute right-10 top-1/2 
-      -translate-y-1/2 flex justify-center items-center overflow-hidden;
+    @apply size-10 rounded-full absolute right-10 top-1/2 
+      -translate-y-1/2 flex justify-center items-center overflow-hidden transition-all duration-500;
+
+    @apply md:group-hover:bg-primary;
 
     img {
-      @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+      @apply size-5 translate-y-0 transition-all duration-500
+        xl:-translate-y-32;
+
+      @apply md:animate-bounce md:group-hover:translate-y-0;
     }
   }
 }

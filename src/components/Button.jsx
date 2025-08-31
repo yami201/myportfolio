@@ -1,24 +1,10 @@
-const Button = ({ className, style, text, target, onClick }) => {
-    const handleClick = (e) => {
-        e.preventDefault();
-        if (onClick) {
-            onClick(e);
-            return;
-        }
+const Button = ({ className, style, text, onClick }) => {
 
-        const targetElement = document.getElementById(target);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-    }
     return (
-        <a
+        <button
             className={`cta-wrapper ${className ?? ''}`}
             style={style}
-            onClick={handleClick}
+            onClick={onClick}
         >
             <div className="cta-button group">
                 <div className="bg-circle" />
@@ -28,7 +14,7 @@ const Button = ({ className, style, text, target, onClick }) => {
                 </div>
             </div>
 
-        </a>
+        </button>
     );
 }
 

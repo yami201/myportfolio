@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import { Stats } from "@react-three/drei";
 import useStore from "../../hooks/useStore.js";
 import Blob from "./Blob.jsx";
 import Rings from "./Rings.jsx";
@@ -36,8 +35,6 @@ export default function Experience() {
         }, [isMobile, UiShown]
     );
 
-    console.log(showBloom, isMobile, UiShown);
-
     const handleClick = () => {
         onStart();
     };
@@ -49,7 +46,6 @@ export default function Experience() {
             className='fixed top-0 left-0 w-full h-full'
         >
             <color attach="background" args={["#000000"]} />
-            <Stats showPanel={0} />
             <ambientLight intensity={1} />
             <directionalLight 
                 position={[0, 2, 4]} 
@@ -73,7 +69,7 @@ export default function Experience() {
             </group>
 
                 <EffectComposer disableNormalPass>
-                    <Bloom intensity={showBloom ? 1 : 0.1} luminanceThreshold={0.1} luminanceSmoothing={0.9} />
+                    <Bloom intensity={showBloom ? 1 : 0.01} luminanceThreshold={0.1} luminanceSmoothing={0.9} />
                 </EffectComposer>
         </Canvas>
     );
