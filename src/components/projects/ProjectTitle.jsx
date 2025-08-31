@@ -1,8 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
+import ICONS from "../../assests/icons";
 
 const ProjectTitle = ({ title, active, link }) => {
   return (
-    <>
+    <div className="flex">
       <h3 className="relative text-3xl md:text-5xl font-bold uppercase opacity-85 text-white flex">
         <span className="relative z-0">{title}</span>
 
@@ -15,6 +16,8 @@ const ProjectTitle = ({ title, active, link }) => {
           <span className="text-slate-400">{title}</span>
         </motion.span>
 
+      </h3>
+
         <AnimatePresence>
           {active && link && (
             <motion.a
@@ -25,14 +28,13 @@ const ProjectTitle = ({ title, active, link }) => {
               exit={{ opacity: 0, x: -10, scale: 0.8 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
               rel="noopener noreferrer"
+              className="size-10"
             >
-              <img src="/icons/link.svg" alt="Link" className="size-10" />
+              <ICONS.LinkIcon className="size-10" />
             </motion.a>
           )}
         </AnimatePresence>
-      </h3>
-
-    </>
+    </div>
   );
 };
 

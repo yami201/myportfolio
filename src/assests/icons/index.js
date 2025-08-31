@@ -48,6 +48,7 @@ import BashIcon  from "./bash.svg?react"
 import JestIcon  from "./jest.svg?react"
 
 import GearIcon from "./gear.svg?react"
+import LinkIcon from "./link.svg?react"
 
 
 
@@ -97,6 +98,7 @@ const ICONS = {
     BashIcon,
     JestIcon,
     GearIcon,
+    LinkIcon,
 }
 
 export default ICONS;

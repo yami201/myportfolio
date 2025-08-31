@@ -4,6 +4,7 @@ import ProjectImage from "./ProjectImage";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import ProjectTitle from "./ProjectTitle";
+
 const ProjectItem = ({ index, project }) => {
     const [hovered, setHovered] = useState(false)
     const [toggled, setToggled] = useState(false)
