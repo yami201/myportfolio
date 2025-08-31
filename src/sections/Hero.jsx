@@ -61,7 +61,7 @@ const Hero = () => {
                 <Button text="About Me" onClick={scrollToTarget.bind(this, "about")} />
                 <div className="flex justify-between mt-4">
                     <button
-                        onClick={scrollToTarget.bind(this, "projects")}
+                        onClick={scrollToTarget.bind(this, "contact")}
                         className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer">Hire Me</button>
                     <a
                         className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer"
