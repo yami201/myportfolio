@@ -1,9 +1,16 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useMediaQuery } from "react-responsive";
 
 const CustomCursor = () => {
   const circleRef = useRef();
   const dotRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  if(isMobile) {
+    // If mobile, disable custom cursor
+    return null;
+  }
 
   useEffect(() => {
     const circleEl = circleRef.current
