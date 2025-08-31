@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { Stats } from "@react-three/drei";
 import useStore from "../../hooks/useStore.js";
@@ -8,10 +8,13 @@ import Rings from "./Rings.jsx";
 import gsap from "gsap";
 import UiLabel from "./UiLabel.jsx";
 import Floor from "./Floor.jsx";
+import { useMediaQuery } from "react-responsive";
 
 export default function Experience() {
     const dirLightRef = useRef();
-    const {onStart, ringsVisible} = useStore((state) => state);
+    const {onStart, ringsVisible, UiShown} = useStore((state) => state);
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const [showBloom, setShowBloom] = useState(true);
 
     const handleHover = (hovered) => {
         if (dirLightRef.current) {
@@ -22,6 +25,18 @@ export default function Experience() {
         });
         }
     };
+
+    useEffect(
+        () => {
+            if (isMobile) {
+                setShowBloom(!UiShown);
+            } else {
+                setShowBloom(true);
+            }
+        }, [isMobile, UiShown]
+    );
+
+    console.log(showBloom, isMobile, UiShown);
 
     const handleClick = () => {
         onStart();
@@ -35,10 +50,10 @@ export default function Experience() {
         >
             <color attach="background" args={["#000000"]} />
             <Stats showPanel={0} />
-            <ambientLight intensity={0.6} />
+            <ambientLight intensity={1} />
             <directionalLight 
                 position={[0, 2, 4]} 
-                intensity={2} 
+                intensity={showBloom ? 2 : 4} 
                 ref={dirLightRef}
             />
 
@@ -57,9 +72,9 @@ export default function Experience() {
                 <Floor />
             </group>
 
-            <EffectComposer disableNormalPass>
-                <Bloom intensity={1} luminanceThreshold={0.1} luminanceSmoothing={0.9} />
-            </EffectComposer>
+                <EffectComposer disableNormalPass>
+                    <Bloom intensity={showBloom ? 1 : 0.1} luminanceThreshold={0.1} luminanceSmoothing={0.9} />
+                </EffectComposer>
         </Canvas>
     );
 }

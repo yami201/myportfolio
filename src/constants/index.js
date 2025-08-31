@@ -150,7 +150,7 @@ const career = [
   {
     date: "Summer 2023",
     title: "Frontend Developer Intern",
-    company: "coAlias (Remote)",
+    company: "CoAlias",
     description:
       "Developed a responsive and interactive analytics page to visualize website performance metrics.",
     color: "#1AC0FE",

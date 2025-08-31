@@ -22,7 +22,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-gray-400 text-lg md:mb-10 md:pb-4 md:border-b border-gray-500"
+                className="text-secondary text-lg md:mb-10 md:pb-4 md:border-b border-secondary"
             >
                 This is me.
             </motion.p>

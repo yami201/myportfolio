@@ -4,6 +4,7 @@ import useStore from "./hooks/useStore.js"
 import Particles from "./components/Particles.jsx"
 import Section from "./components/Section.jsx"
 import Preloader from "./components/Preloader.jsx"
+import Footer from "./sections/Footer.jsx"
 
 const Hero = lazy(() => import("./sections/Hero.jsx"))
 const Projects = lazy(() => import("./sections/Projects.jsx"))
@@ -65,6 +66,9 @@ export default function App() {
               </Section>
               <Section id="contact" className="px-8">
                 <Contact />
+              </Section>
+              <Section id="footer" className="px-8">
+                <Footer />
               </Section>
             </>
           )}

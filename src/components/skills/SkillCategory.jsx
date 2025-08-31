@@ -9,7 +9,7 @@ const SkillCategory = ({ title, items }) => {
     <div className="mb-10 md:mb-28 flex max-md:flex-col w-full">
       {isMobile ? (
         <>
-          <h3 className="text-3xl font-bold uppercase text-gray-400 mb-6 md:w-1/3 md:pl-10">
+          <h3 className="text-3xl font-bold uppercase text-white mb-6 md:w-1/3 md:pl-10">
             {title}
           </h3>
           <ul className="flex flex-wrap gap-6 md:w-2/3">

@@ -13,7 +13,7 @@ const ProjectTitle = ({ title, active, link }) => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="absolute left-0 top-0 overflow-hidden whitespace-nowrap"
         >
-          <span className="text-slate-400">{title}</span>
+          <span className="text-primary">{title}</span>
         </motion.span>
 
       </h3>

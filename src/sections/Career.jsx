@@ -110,7 +110,7 @@ const Career = () => {
 
 
               <h3 className="text-2xl font-semibold">{exp.title}</h3>
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="text-secondary text-sm mb-2">
                 {exp.company} — {exp.date}
               </p>
               <p className="text-gray-300">{exp.description}</p>

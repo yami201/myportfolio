@@ -21,7 +21,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-slate-400 font-bold text-xl mb-2 ml-1">Hi, I am</motion.p>
+                className="text-secondary font-bold text-xl mb-2 ml-1">Hi, I am</motion.p>
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-2xl md:text-4xl font-bold text-slate-600 mb-6 flex max-md:flex-col max-md:items-center">
+                className="text-2xl md:text-4xl font-bold text-primary mb-6 flex max-md:flex-col max-md:items-center">
                 <ReactTyped
                     strings={[
                         "Software Engineer",
@@ -62,15 +62,15 @@ const Hero = () => {
                 <div className="flex justify-between mt-4">
                     <button 
                         onClick={scrollToContactForm}
-                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer">Hire Me</button>
+                        className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer">Hire Me</button>
                     <a
-                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer"
+                        className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer"
                         target="_blank"
                         href="https://github.com/yami201">
                         <Github />
                     </a>
                     <a
-                        className="border border-slate-500 bg-black rounded font-bold p-2 px-4 cursor-pointer"
+                        className="border border-primary bg-black rounded font-bold p-2 px-4 cursor-pointer"
                         target="_blank"
                         href="https://www.linkedin.com/in/mohammed-nejjar">
                         <LinkedIn />

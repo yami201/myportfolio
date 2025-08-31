@@ -4,7 +4,7 @@ import ICONS from "../assests/icons";
 const SectionHeader = ({ content }) => {
     return (
         <h2
-            className="text-xl font-bold tracking-widest mb-12 flex items-center gap-4">
+            className="text-xl font-bold tracking-widest mb-12 flex items-center gap-4 text-white">
             <motion.span
                 animate={{ rotate: 360 }}
                 transition={{

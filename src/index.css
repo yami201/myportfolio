@@ -36,12 +36,8 @@ section {
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
-  --color-white-50: #d9ecff;
-  --color-black-50: #1c1c21;
-  --color-black-100: #0e0e10;
-  --color-black-200: #282732;
-  --color-blue-50: #839cb5;
-  --color-blue-100: #2d2d38;
+  --color-primary: oklch(70.4% 0.14 182.503);
+  --color-secondary: oklch(55.4% 0.046 257.417);
 }
 
 @layer utilities {
@@ -58,21 +54,21 @@ section {
 }
 
 .cta-button {
-  @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
+  @apply px-4 py-4 rounded-lg bg-slate-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
   .bg-circle {
     @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
       w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-      rounded-full bg-white-50 transition-all duration-500;
+      rounded-full bg-primary transition-all duration-500;
   }
 
   .text {
     @apply uppercase md:text-lg text-black transition-all duration-500
-      group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+      group-hover:text-primary group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
   }
 
   .arrow-wrapper {
-    @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
+    @apply group-hover:bg-primary size-10 rounded-full absolute right-10 top-1/2 
       -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
     img {
