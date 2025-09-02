@@ -49,7 +49,6 @@ const skills = {
   backend: [
     { name: "Node.js", Icon: ICONS.NodeIcon },
     { name: "Express.js", Icon: ICONS.ExpressIcon },
-    { name: "NestJS", Icon: ICONS.NestIcon },
     { name: "GraphQL", Icon: ICONS.GraphqlIcon },
     { name: "Java", Icon: ICONS.JavaIcon },
     { name: "Spring", Icon: ICONS.SpringIcon },
@@ -132,52 +131,12 @@ const projects = [
 
 const career = [
   {
-    date: "September 2022",
-    title: "Computer Science Engineering Student & Reserve Officer",
-    company: "Mohammadia School of Engineers, Morocco",
+    date: "July 31, 2024",
+    title: "Reserve Military Officer Commission",
+    company: "Royal Moroccan Armed Forces",
     description:
-      "Began studies in Computer Science Engineering while also serving as a reserve military officer.",
-    color: "#2e4a9d",
-  },
-  {
-    date: "2023",
-    title: "Freelance Web Developer",
-    company: "SALAAM Association",
-    description:
-      "Refactored and modernized the organization's website, upgrading to the latest technologies and resolving UI issues.",
-    color: "#5C1730",
-  },
-  {
-    date: "Summer 2023",
-    title: "Frontend Developer Intern",
-    company: "CoAlias",
-    description:
-      "Developed a responsive and interactive analytics page to visualize website performance metrics.",
-    color: "#1AC0FE",
-  },
-  {
-    date: "Feb – June 2024",
-    title: "Apprenticeship: Software Engineer",
-    company: "Attijariwafa Bank",
-    description:
-      "Contributed to the development of a recruitment platform enabling employers to post job openings and candidates to apply directly.",
-    color: "#F8B135",
-  },
-  {
-    date: "Summer 2024",
-    title: "Software Engineering Intern",
-    company: "Xlab",
-    description:
-      "Enhanced and expanded features in the company's no-code platform for building functional applications.",
-    color: "#F16B71",
-  },
-  {
-    date: "Jan – Aug 2024",
-    title: "End of Studies Internship: Research Assistant",
-    company: "Oracle R&D Morocco",
-    description:
-      "Designed and implemented a Runbook Tasks Automation Tool to automate operational tasks and reduce human intervention.",
-    color: "#C54838",
+      "Took the military oath of officers and was officially commissioned as a reserve military officer in a ceremony presided over by His Majesty King Mohammed VI.",
+    color: "#127347", 
   },
   {
     date: "May 29, 2024",
@@ -188,14 +147,55 @@ const career = [
     color: "#2e4a9d",
   },
   {
-    date: "July 31, 2024",
-    title: "Reserve Military Officer Commission",
-    company: "Royal Moroccan Armed Forces",
+    date: "Jan – Aug 2024",
+    title: "End of Studies Internship: Research Assistant",
+    company: "Oracle R&D Morocco",
     description:
-      "Took the military oath of officers and was officially commissioned as a reserve military officer in a ceremony presided over by His Majesty King Mohammed VI.",
-    color: "#127347", 
+      "Designed and implemented a Runbook Tasks Automation Tool to automate operational tasks and reduce human intervention.",
+    color: "#C54838",
+  },
+  {
+    date: "Summer 2024",
+    title: "Software Engineering Intern",
+    company: "Xlab",
+    description:
+      "Enhanced and expanded features in the company's no-code platform for building functional applications.",
+    color: "#F16B71",
+  },
+  {
+    date: "Feb – June 2024",
+    title: "Apprenticeship: Software Engineer",
+    company: "Attijariwafa Bank",
+    description:
+      "Contributed to the development of a recruitment platform enabling employers to post job openings and candidates to apply directly.",
+    color: "#F8B135",
+  },
+  {
+    date: "Summer 2023",
+    title: "Frontend Developer Intern",
+    company: "CoAlias",
+    description:
+      "Developed a responsive and interactive analytics page to visualize website performance metrics.",
+    color: "#1AC0FE",
+  },
+  {
+    date: "2023",
+    title: "Freelance Web Developer",
+    company: "SALAAM Association",
+    description:
+      "Refactored and modernized the organization's website, upgrading to the latest technologies and resolving UI issues.",
+    color: "#5C1730",
+  },
+  {
+    date: "September 2022",
+    title: "Computer Science Engineering Student & Reserve Officer",
+    company: "Mohammadia School of Engineers, Morocco",
+    description:
+      "Began studies in Computer Science Engineering while also serving as a reserve military officer.",
+    color: "#2e4a9d",
   },
 ];
+
 
 
 const assets = [

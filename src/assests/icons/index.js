@@ -13,7 +13,6 @@ import ThreeIcon  from "./threejs.svg?react"
 
 import NodeIcon  from "./nodejs.svg?react"
 import ExpressIcon  from "./expressjs.svg?react"
-import NestIcon  from "./nestjs.svg?react"
 import GraphqlIcon  from "./graphql.svg?react"
 import JavaIcon  from "./java.svg?react"
 import SpringIcon  from "./spring.svg?react"
@@ -67,7 +66,6 @@ const ICONS = {
     ThreeIcon,
     NodeIcon,
     ExpressIcon,
-    NestIcon,
     GraphqlIcon,
     JavaIcon,
     SpringIcon,
